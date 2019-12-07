@@ -12,7 +12,7 @@ const models = [User, File, Appointment];
 class Database {
   constructor() {
     this.init();
-    this.mongo();
+    // this.mongo();
   }
 
   init() {
@@ -26,7 +26,7 @@ class Database {
 
   mongo() {
     this.mongoConnection = mongoose.connect(
-        'mongodb://localhost:27017/gobarber',
+        'mongodb://0.0.0.0:27017/gobarber',
         {
           useNewUrlParser: true, useFindAndModify: true,
         }
